@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-// Documentation : https://www.npmjs.com/package/react-countdown-now
-import Countdown from 'react-countdown-now';
+import styled from 'styled-components';
+import Countdown from './Countdown';
 import logo from './logo.svg';
 import { LandingPageElement } from './style';
 
-const YEAR = 2017;
-const MONTH = 11;
-const DAY = 6;
+const CenteredCountdown = styled(Countdown)`
+  justify-content: center;
+`;
 
 class App extends Component {
   render() {
     return (
       <LandingPageElement>
-        <Countdown date={new Date(YEAR, MONTH, DAY)} />
+        <CenteredCountdown />
       </LandingPageElement>
     );
   }
