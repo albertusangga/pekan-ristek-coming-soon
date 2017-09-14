@@ -15,6 +15,7 @@ const CountdownContainer = styled.div`
 const CountdownSection = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: Anurati-Regular;
   align-items: center;
   justify-content: center;
   .value {
