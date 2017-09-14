@@ -24,24 +24,27 @@ const CountdownSection = styled.div`
   }
 `;
 
+const toDoubleDigit = number => number < 10 ? `0${number}` : `${number}`;
+
+
 const countdownRenderer = ({ days, hours, minutes, ...props }) => {
     return (
       <CountdownContainer {...props}>
         <CountdownSection>
           <div className="value">
-            {`${days}:`}
+            {`${toDoubleDigit(days)}:`}
           </div>
           <div className="description">DAYS</div>
         </CountdownSection>
         <CountdownSection>
           <div className="value">
-              {`${hours}:`}
+              {`${toDoubleDigit(hours)}:`}
           </div>
           <div className="description">HOURS</div>
         </CountdownSection>
         <CountdownSection>
             <div className="value">
-              {`${minutes}`}
+              {`${toDoubleDigit(minutes)}`}
             </div>
           <div className="description">MINUTES</div>
         </CountdownSection>
