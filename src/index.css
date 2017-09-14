@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +10,35 @@ body {
 
 @font-face {
   font-family: 'Anurati-Regular';
-  src: url('./Anurati-Regular.otf') format('truetype');
+  src: url('./fonts/Anurati-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/HELR45W.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'High School USA Serif';
+  src: url('./fonts/High_School_USA_Serif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jaapokki-Regular';
+  src: url('./fonts/Jaapokki-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vermin Vibes 4 Helium';
+  src: url('./fonts/Vermin Vibes 4 Helium.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
