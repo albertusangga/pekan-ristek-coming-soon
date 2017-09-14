@@ -7,8 +7,9 @@ const MONTH = 11;
 const DAY = 6;
 
 const CountdownContainer = styled.div`
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 `;
 
 const CountdownSection = styled.div`
@@ -27,26 +28,41 @@ const CountdownSection = styled.div`
 const toDoubleDigit = number => number < 10 ? `0${number}` : `${number}`;
 
 
-const countdownRenderer = ({ days, hours, minutes, ...props }) => {
+const countdownRenderer = ({ days, hours, minutes, seconds, ...props }) => {
     return (
       <CountdownContainer {...props}>
         <CountdownSection>
           <div className="value">
-            {`${toDoubleDigit(days)}:`}
+            {`${toDoubleDigit(days)}`}
           </div>
           <div className="description">DAYS</div>
         </CountdownSection>
         <CountdownSection>
+            <div className="value">:</div>
+        </CountdownSection>
+        <CountdownSection>
           <div className="value">
-              {`${toDoubleDigit(hours)}:`}
+              {`${toDoubleDigit(hours)}`}
           </div>
           <div className="description">HOURS</div>
+        </CountdownSection>
+        <CountdownSection>
+            <div className="value">:</div>
         </CountdownSection>
         <CountdownSection>
             <div className="value">
               {`${toDoubleDigit(minutes)}`}
             </div>
           <div className="description">MINUTES</div>
+        </CountdownSection>
+        <CountdownSection>
+            <div className="value">:</div>
+        </CountdownSection>
+        <CountdownSection>
+            <div className="value">
+              {`${toDoubleDigit(seconds)}`}
+            </div>
+          <div className="description">SECONDS</div>
         </CountdownSection>
       </CountdownContainer>
     );
