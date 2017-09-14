@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Countdown from 'react-countdown-now';
 
@@ -14,14 +14,6 @@ const CountdownContainer = styled.div`
 
 const CountdownSection = styled.div`
   
-  @media screen and (max-width: 64em) {
-    .value {
-      font-size: 2.5rem;
-    }
-    .description {
-      font-size: 0.7rem;
-    }
-  }
 
   display: flex;
   flex-direction: column;
@@ -31,9 +23,19 @@ const CountdownSection = styled.div`
     font-size: 6rem;
     font-family: 'High_School_USA_Serif';
   }
+
   .description {
     font-size: 1rem;
     font-family: 'Helvetica';
+  }
+
+  @media screen and (max-width: 64em) {
+    .value {
+      font-size: 2.5rem;
+    }
+    .description {
+      font-size: 0.9rem;
+    }
   }
 `;
 

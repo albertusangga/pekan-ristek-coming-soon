@@ -10,12 +10,13 @@ export const LandingPageElement = styled.div`
 
 	@keyframes fadeShadow {
 		0% { text-shadow: none; }
-		50% { text-shadow: 2px 2px #aaaaaa; blur-radius: 5rem; }
+		20% { text-shadow: 3px 3px #aaaaaa; }
+		80% { text-shadow: 3px 3px #aaaaaa; }
 		100% { text-shadow: none; }	
 	}
 
-	width: 100%;
-	height: 100vh;
+	max-width: 100%;
+	max-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -29,7 +30,7 @@ export const LandingPageElement = styled.div`
 		background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 		position: absolute;
 		z-index: 0;
-		animation: fadeOpacity 6s infinite;
+		animation: fadeOpacity 10s infinite;
 	}
 
 	.container {
@@ -52,7 +53,8 @@ export const LandingPageElement = styled.div`
 		font-size: 7rem;
 		line-height: 6rem;
 		letter-spacing: -0.7rem;
-		animation: fadeShadow 6s infinite;
+		text-align: center;
+		animation: fadeShadow 10s infinite;
 	}
 
 	.ready {
@@ -90,7 +92,48 @@ export const LandingPageElement = styled.div`
 		objectFit: cover;
 	}
 
-	@media screen and(max-width: 64em) {
-		
+	@media screen and (max-width: 40em) {
+
+		.container {
+			margin: 0.5rem;
+			justify-content: space-around;
+		}
+
+		.squares {
+			margin: 0 0 0.5rem 0;
+		}
+
+		.soon {
+			font-size: 4rem;
+			letter-spacing: -0.3rem;
+			line-height: 3rem;
+		}
+
+		.ready {
+			font-size: 1rem;
+			letter-spacing: 1rem;
+		}
+
+		.divider {
+			max-width: 15rem;
+			margin: 0;
+		}
+
+		.logoContainer {
+			width: 100%;
+			padding: 0 2rem;
+
+			.pekanRistek{
+				font-size: 1rem;
+			}
+
+			.logoRistek {
+				height: 2rem;
+			}
+		}
+
+		.footerPattern {
+			display: none;
+		}
 	}
 `;

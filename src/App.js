@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Countdown from './Countdown';
 import squares from './assets/squares.png';
 import logoRistek from './assets/risteklogo.png';
@@ -12,7 +11,7 @@ class App extends Component {
       <LandingPageElement>
       	<div className="overlay" />
 	      <div className="container">
-	      	<img src={squares} className="squares" />
+	      	<img src={squares} className="squares" alt="square logo" />
 	        <div className="soon">
 	        	COMI NG
 	        </div>
@@ -29,9 +28,9 @@ class App extends Component {
 	        	<div className="pekanRistek">
 	        		Pekan Ristek
 	        	</div>
-	        	<img src={logoRistek} className="logoRistek" />
+	        	<img src={logoRistek} className="logoRistek" alt="logo ristek" />
 	        </div>
-        	<img src={footerPattern} className="footerPattern" />
+        	<img src={footerPattern} className="footerPattern" alt="pattern on footer" />
 	       </div>
       </LandingPageElement>
     );
