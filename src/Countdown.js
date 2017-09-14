@@ -25,14 +25,15 @@ const CountdownSection = styled.div`
 
   display: flex;
   flex-direction: column;
-  font-family: Anurati-Regular;
   align-items: center;
   justify-content: center;
   .value {
-    font-size: 4rem;
+    font-size: 6rem;
+    font-family: 'High_School_USA_Serif';
   }
   .description {
     font-size: 1rem;
+    font-family: 'Helvetica';
   }
 `;
 
