@@ -13,6 +13,16 @@ const CountdownContainer = styled.div`
 `;
 
 const CountdownSection = styled.div`
+  
+  @media screen and (max-width: 64em) {
+    .value {
+      font-size: 2.5rem;
+    }
+    .description {
+      font-size: 0.7rem;
+    }
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;

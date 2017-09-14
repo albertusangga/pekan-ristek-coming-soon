@@ -9,6 +9,11 @@ class App extends Component {
     return (
       <LandingPageElement>
         <Countdown />
+        <div className="divider" />
+        <div>
+        	BE READY IN
+        </div>
+        <div className="divider"/>
       </LandingPageElement>
     );
   }
