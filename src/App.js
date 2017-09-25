@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Countdown from './Countdown';
 import squares from './assets/squares.png';
 import logoRistek from './assets/risteklogo.png';
+import logoTraveloka from './assets/traveloka.png';
 import footerPattern from './assets/flags.png';
 import { LandingPageElement } from './style';
 
@@ -30,6 +31,7 @@ class App extends Component {
 	        	</div>
 	        	<img src={logoRistek} className="logoRistek" alt="logo ristek" />
 	        </div>
+        	<img src={logoTraveloka} className="logoTraveloka" alt="logo traveloka" />
         	<img src={footerPattern} className="footerPattern" alt="pattern on footer" />
 	       </div>
       </LandingPageElement>

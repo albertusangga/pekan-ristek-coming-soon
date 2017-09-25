@@ -17,6 +17,8 @@ export const LandingPageElement = styled.div`
 
 	max-width: 100%;
 	max-height: 100vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -67,7 +69,7 @@ export const LandingPageElement = styled.div`
 		width: 30rem;
 		height: 0.05rem;
 		background: #FAFAFA;
-		margin: 0.5rem 0;
+		margin: 0.25rem 0;
 	}
 
 	.logoContainer {
@@ -84,7 +86,14 @@ export const LandingPageElement = styled.div`
 
 		.logoRistek {
 			height: 5rem;
+
 		}
+
+	}
+
+	.logoTraveloka {
+		height: 2.5rem;
+		margin: 0.5rem;
 	}
 
 	.footerPattern {
@@ -111,7 +120,7 @@ export const LandingPageElement = styled.div`
 
 		.ready {
 			font-size: 1rem;
-			letter-spacing: 1rem;
+			letter-spacing: 0.8rem;
 		}
 
 		.divider {
@@ -128,7 +137,7 @@ export const LandingPageElement = styled.div`
 			}
 
 			.logoRistek {
-				height: 2rem;
+				height: 3rem;
 			}
 		}
 

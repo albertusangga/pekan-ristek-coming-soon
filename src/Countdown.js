@@ -13,14 +13,12 @@ const CountdownContainer = styled.div`
 `;
 
 const CountdownSection = styled.div`
-  
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   .value {
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'High_School_USA_Serif';
   }
 
