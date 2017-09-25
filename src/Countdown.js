@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Countdown from 'react-countdown-now';
 
 const YEAR = 2017;
-const MONTH = 11;
+const MONTH = 10;
 const DAY = 6;
 
 const CountdownContainer = styled.div`
