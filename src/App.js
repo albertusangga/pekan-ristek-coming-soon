@@ -3,7 +3,7 @@ import Countdown from './Countdown';
 import squares from './assets/squares.png';
 import logoRistek from './assets/risteklogo.png';
 import logoTraveloka from './assets/traveloka.png';
-import logoDewaweb from './assets/logo-dewa-web.jpg';
+import logoDewaweb from './assets/logo-dewa-web.png';
 import footerPattern from './assets/flags.png';
 import { LandingPageElement } from './style';
 

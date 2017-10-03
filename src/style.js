@@ -52,7 +52,7 @@ export const LandingPageElement = styled.div`
 
   .soon {
     font-family: Anurati-Regular;
-    font-size: 7rem;
+    font-size: 5.5rem;
     line-height: 6rem;
     letter-spacing: -0.7rem;
     text-align: center;
@@ -92,6 +92,7 @@ export const LandingPageElement = styled.div`
   }
 
   .logoSponsorContainer {
+    width: 100%;
     display: flex;
     height: 3.5rem;
     flex-direction: row;
@@ -100,12 +101,13 @@ export const LandingPageElement = styled.div`
   }
 
   .logoTraveloka {
-    height: 2.5rem;
-    margin: 0.2rem;
+    height: 3rem;
+    margin: 0.1rem;
   }
 
   .logoDewaweb {
-    height: 2.5rem;
+    height: 3rem;
+    margin: 0.1rem;
   }
 
   .footerPattern {
@@ -152,6 +154,16 @@ export const LandingPageElement = styled.div`
         height: 3rem;
       }
     }
+
+  .logoTraveloka {
+    height: 2rem;
+    margin: 0.1rem;
+  }
+
+  .logoDewaweb {
+    height: 2rem;
+    margin: 0.1rem;
+  }
 
     .footerPattern {
       display: none;

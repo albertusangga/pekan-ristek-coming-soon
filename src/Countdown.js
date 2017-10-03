@@ -18,7 +18,7 @@ const CountdownSection = styled.div`
   align-items: center;
   justify-content: center;
   .value {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'High_School_USA_Serif';
   }
 
