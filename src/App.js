@@ -33,9 +33,13 @@ class App extends Component {
             <img src={logoRistek} className="logoRistek" alt="logo ristek" />
           </div>
           <div className="logoSponsorContainer">
-            <img src={logoTraveloka} className="logoTraveloka" alt="logo traveloka" />
-            <img src={logoDewaweb} className="logoDewaweb" alt="logo dewa web" />
-          </div>
+					<a href="https://www.traveloka.com">
+						<img src={logoTraveloka} className="logoTraveloka" alt="logo traveloka" />
+          </a>  
+					<a href="https://www.dewaweb.com">
+							<img src={logoDewaweb} className="logoDewaweb" alt="logo dewa web" />
+						</a>
+					</div>
           <img src={footerPattern} className="footerPattern" alt="pattern on footer" />
          </div>
       </LandingPageElement>
